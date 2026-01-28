@@ -20,7 +20,34 @@ Must be in 2NF and there should be no transitive dependency(a non key attribute 
 ## Database Schema
 
 ### Unnormalized Form
-'''
-raw_data(StudentID , Name, Email, Major, MajorHead, CourseID, CourseTitle, Credits, Grade, Building, Room)
 
-'''
+```
+raw_data(StudentID , Name, Email, Major, MajorHead, CourseID, CourseTitle, Credits, Grade, Building, Room)
+```
+
+### First Normal Form(1NF)
+
+The table is already in 1NF . So let us make it in 2NF and 3NF
++------------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+| Student_ID | Name  | Email         | Major   | MajorHead | CourseID | CourseTitle    | Credits | Grade | Building  | Room |
++------------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+| S101       | Alice | alice@uni.edu | CS      | Dr.Smith  | CS301    | Algorithms     |       4 | A     | Science   |  205 |
+| S101       | Alice | alice@uni.edu | CS      | Dr.Smith  | MATH201  | Linear Algebra |       3 | B     | Math Wing |  101 |
+| S102       | Bob   | bob@uni.edu   | CS      | Dr.Smith  | CS301    | Algorithms     |       4 | C     | Science   |  205 |
+| S103       | Carol | carol@uni.edu | Physics | Dr.Lee    | PHYS101  | Mechanics      |       4 | A     | Science   |  301 |
+| S103       | Carol | carol@uni.edu | Physics | Dr.Lee    | PHYS101  | Mechanics      |       4 | A     | Science   |  301 |
++------------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+
+### Second Normal Form (2NF)
+
+- Student --> (StudentID , Name , Email)
+- Course --> (CourseID, CourseTitle, Credits, Building, Room)
+- Enrollment --> (StudentID, CourseID, Grade,)
+
+### Third Normal Form(3NF)
+
+- Student --> (StudentID, Name, Email, Major)
+- Major --> (Major, MajorHead)
+- Course --> (CourseID, CourseTitle, Credits, Building, Room)
+- Enrollment --> (StudentID, CourseID, Grade)
+
