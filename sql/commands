@@ -1,0 +1,36 @@
+## 1NF Table
+
+-- Part1 : 1NF 
+
+CREATE TABLE Raw_data(
+  Student_ID VARCHAR(10) PRIMARY KEY,
+  Name VARCHAR(100),
+  Email VARCHAR(100),
+  Major VARCHAR(50),
+  MajorHead VARCHAR(50),
+  CourseID VARCHAR(100),
+  CourseTitle VARCHAR(100),
+  Credits INT,
+  Grade VARCHAR(5),
+  Building VARCHAR(50),
+  Room INT
+);
+
+INSERT INTO raw_data 
+VALUES
+    ('S101' , 'Alice' , 'alice@uni.edu' , 'CS' , 'Dr.Smith' , 'CS301' , 'Linear Algebra', 4, 'A' , 'Math Wing' , 201 ),
+    ('S101' , 'Alice' , 'alice@uni.edu' , 'CS' , 'Dr.Smith' , 'MATH201' , 'Linear Algebra', 3, 'B' , 'Math Wing' , 101 ),
+    ('S102'  , 'Bob' , 'bob@uni.edu' , 'CS' , 'Dr.Smith' , 'CS301' , 'Algorithms' , 4, 'C', 'Science', 205),
+    ('S103', 'Carol', 'carol@uni.edu', 'Physics', 'Dr.Lee', 'PHYS101' , 'Mechanics' , 4 , 'A' , 'Science', 301 ),
+    ('S103', 'Carol', 'carol@uni.edu', 'Physics', 'Dr.Lee', 'PHYS101' , 'Mechanics' , 4 , 'A' , 'Science', 301 );
+
+-- PART2 : 2NF 
+
+CREATE TABLE Students (
+    StudentID VARCHAR(10) PRIMARY KEY,
+    Name VARCHAR(50),
+    Email VARCHAR(100),
+    Major VARCHAR(50)
+);
+
+
