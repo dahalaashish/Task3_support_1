@@ -98,3 +98,16 @@ The table is already in 1NF . So let us make it in 2NF and 3NF
 | S103      | PHYS101  | A     |
 +-----------+----------+-------+ 
 ```
+## Conclusion
+
+When we again join all these individual tables we get something else
+```
++-----------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+| StudentID | Name  | Email         | Major   | Advisor   | CourseID | CourseTitle    | Credits | Grade | Building  | Room |
++-----------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+| S101      | Alice | alice@uni.edu | CS      | Dr. Smith | CS301    | Algorithms     |       4 | A     | Science   | 205  |
+| S101      | Alice | alice@uni.edu | CS      | Dr. Smith | MATH201  | Linear Algebra |       3 | B     | Math Wing | 101  |
+| S102      | Bob   | bob@uni.edu   | CS      | Dr. Smith | CS301    | Algorithms     |       4 | C     | Science   | 205  |
+| S103      | Carol | carol@uni.edu | Physics | Dr. Lee   | PHYS101  | Mechanics      |       4 | A     | Science   | 301  |
++-----------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+```
