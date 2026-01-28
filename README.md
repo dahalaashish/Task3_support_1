@@ -54,3 +54,7 @@ The table is already in 1NF . So let us make it in 2NF and 3NF
 - Course --> (CourseID, CourseTitle, Credits, Building, Room)
 - Enrollment --> (StudentID, CourseID, Grade)
 
+> **Note: All the commands are in "commands.sql" section** 
+
+## Individual Table Output
+
