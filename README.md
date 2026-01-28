@@ -28,6 +28,7 @@ raw_data(StudentID , Name, Email, Major, MajorHead, CourseID, CourseTitle, Credi
 ### First Normal Form(1NF)
 
 The table is already in 1NF . So let us make it in 2NF and 3NF
+```
 +------------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
 | Student_ID | Name  | Email         | Major   | MajorHead | CourseID | CourseTitle    | Credits | Grade | Building  | Room |
 +------------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
@@ -37,6 +38,8 @@ The table is already in 1NF . So let us make it in 2NF and 3NF
 | S103       | Carol | carol@uni.edu | Physics | Dr.Lee    | PHYS101  | Mechanics      |       4 | A     | Science   |  301 |
 | S103       | Carol | carol@uni.edu | Physics | Dr.Lee    | PHYS101  | Mechanics      |       4 | A     | Science   |  301 |
 +------------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+
+```
 
 ### Second Normal Form (2NF)
 
