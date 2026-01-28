@@ -17,4 +17,10 @@ Must be in 1NF and there should be no partial dependency(non key attribute shoul
 **3NF[Third Normal Form]**
 Must be in 2NF and there should be no transitive dependency(a non key attribute should not be defined using another non key attribute)
 
+## Database Schema
 
+### Unnormalized Form
+'''
+raw_data(StudentID , Name, Email, Major, MajorHead, CourseID, CourseTitle, Credits, Grade, Building, Room)
+
+'''
