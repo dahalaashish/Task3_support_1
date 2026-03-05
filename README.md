@@ -111,3 +111,5 @@ When we again join all these individual tables we get something else
 | S103      | Carol | carol@uni.edu | Physics | Dr. Lee   | PHYS101  | Mechanics      |       4 | A     | Science   | 301  |
 +-----------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
 ```
+
+hello my name is aashish dahal
