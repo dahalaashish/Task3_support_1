@@ -5,7 +5,7 @@ Normalization of a Table
 
 **Normalization:**
 Normalization is the process of organizing data into database where there is no data redundancy and data is stored cleanly and logically.
-
+hello my name is aashish dahal
 **Types of Normalization**
 
  **1NF [First Normal Form]**
